@@ -1,13 +1,6 @@
-import React from 'react';
 import { connect } from 'react-redux'
 
-const List = ({ items }) => (
-  <ul>
-    {
-      items && items.map((item, index) => <li key={index}>{item}</li>)
-    }
-  </ul>
-);
+import List from '../components/List';
 
 const mapStateToProps = (state) => ({
   items: state.items
